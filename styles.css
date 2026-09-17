@@ -1308,5 +1308,21 @@ ul {
   font-weight: 600;
   letter-spacing: 0.1em;
 }
+   /* Botón THE EXPERIENCE sólido y visible */
+.hero-actions .btn-outline {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-actions .btn-outline:hover {
+  background-color: #ffffff !important;
+  color: #0a0a0a !important;
+  border-color: #ffffff !important;
+}
 }
 
