@@ -148,7 +148,7 @@ ul {
 
 .btn-secondary:hover {
   border-color: var(--color-ivory);
-  background-color: rgba(245, 243, 239, 0.06);
+  background-color: rgba(245, 243, 239, 0.3);
 }
 
 /* ==========================================================
