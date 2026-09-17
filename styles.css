@@ -1263,5 +1263,50 @@ ul {
     gap: 1rem;
     align-items: flex-start;
   }
+   /* CAPA OSCURA PARA EL FONDO DEL HERO */
+.hero-bg {
+  position: relative;
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.7) 0%,
+    rgba(10, 10, 10, 0.85) 100%
+  );
+  z-index: 1;
+}
+
+/* TERCER BOTÓN (THE EXPERIENCE) LEGIBLE Y CONTRASTADO */
+.btn-outline {
+  background: rgba(18, 18, 18, 0.75) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #ffffff !important;
+  color: #0a0a0a !important;
+  border-color: #ffffff !important;
+}
+
+/* SOMBRA A LOS TEXTOS PARA QUE RESALTEN SOBRE EL FONDO */
+.hero-title,
+.hero-tag,
+.hero-subtext,
+.meta-value {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+}
+
+.meta-label {
+  color: #d4af37 !important; /* Toque dorado para que la etiqueta se distinga bien */
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
 }
 
